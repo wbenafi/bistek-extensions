@@ -1,0 +1,87 @@
+body {
+  padding: 15px;
+  min-width: 250px;
+  max-width: 250px;
+}
+
+.popup-title {
+  font-size: 20px;
+  margin: 5px 0px 15px 0px;
+  color: #e46454
+}
+
+.input {
+  padding: 10px;
+  border: gray 1px solid;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.input:focus {
+  outline-color: rgb(119, 116, 116);
+}
+
+.input.ip {
+  width: calc(100% - 22px);
+}
+
+.input.mask {
+  margin-right: 5%;
+  width: 75%;
+}
+
+.input.cidr {
+  width: 20%;
+}
+
+.calculate-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #e46454;
+  color: white;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 300ms;
+}
+
+.calculate-button:hover {
+  background-color: #ca4735;
+}
+
+#port_description_container {
+  display: none;
+}
+
+.port-description-container h1 {
+  color: #e46454;
+  font-size: 20px;
+  margin-top: 12px;
+  border: none;
+  text-decoration: none;
+}
+
+.port-description-container .protocol {
+  color: rgb(95, 95, 95);
+  font-size: 15px;
+  font-weight: 700;
+  margin: 5px 0px;
+}
+
+.port-description-container .description {
+  font-size: 12px;
+  margin-bottom: 0;
+  color: gray;
+  line-height: 1.5;
+}
+
+.no-port {
+  font-size: 12px;
+  margin-bottom: 0;
+  color: gray;
+  line-height: 1.5;
+}
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+  <form action="">
+
+    <h1 class="popup-title">Subnet calculator</h1>
+    <input type="ip" class="input ip" placeholder="IP" id="port_input">
+
+    <div style="display: flex;">
+      <input type="ip" class="input mask" placeholder="Mask" id="port_input">
+      <input type="ip" class="input cidr" placeholder="CIDR" id="port_input">
+    </div>
+
+    <input class="calculate-button" type="submit" title="Calculate" value="Calculate">
+  </form>
+
+
+  <div class="port-description-container" id="port_description_container">
+    <h1 id="title">Port 5xxx</h1>
+    <p id="protocol" class="protocol">tcp</p>
+    <p id="description" class="description">esta es la descripción</p>
+  </div>
+
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
