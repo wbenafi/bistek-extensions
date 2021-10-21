@@ -1,6 +1,6 @@
 {
-    "name": "Twitter Extension",
-    "description": "Create a tweet without enter to twitter page",
+    "name": "IP Information",
+    "description": "Show public IP's info",
     "version": "1.0",
     "manifest_version": 3,
     "icons": {
