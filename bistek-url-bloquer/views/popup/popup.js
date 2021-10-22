@@ -15,20 +15,20 @@ function resetButton() {
 }
 
 function showHelp() {
-    customFileUpload.style.visibility = "hidden";
+    customFileUpload.style.visibility = "hidden"
     title.innerText = "When uploading the file you must separate the domains with a line break."
 }
 
 function showTitle() {
-    customFileUpload.style.visibility = "visible";
+    customFileUpload.style.visibility = "visible"
     title.innerText = `Click on "Choose File" to upload a .txt file with domains to be blocked:`
 }
 
 function readFile(){
     const file = inputFile.files[0]
-    let fileName = file.name.split('.');
+    let fileName = file.name.split('.')
     if(fileName[fileName.length -1]=="txt"){
-        console.log(file);
+        console.log(file)
         let reader = new FileReader()
         reader.onload = function () {
             urls_list = this.result.split(/\r?\n/)
@@ -42,11 +42,11 @@ function readFile(){
 }
 
 async function uploadAnimation(animation){
-    document.body.classList.add(animation);
+    document.body.classList.add(animation)
     await sleep(1000)
-    document.body.classList.remove(animation);
+    document.body.classList.remove(animation)
 }
 
 function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise(resolve => setTimeout(resolve, ms))
 }
