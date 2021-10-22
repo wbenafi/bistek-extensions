@@ -19,6 +19,9 @@
         "scripting",
         "tabs"
     ],
+    "host_permissions": [
+        "http://ipwhois.app/"
+    ],
     "action": {
         "default_popup": "views/popup/popup.html",
         "default_icon": {

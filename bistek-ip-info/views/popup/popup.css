@@ -46,5 +46,43 @@ button:hover {
 }
 
 #error-msg {
+  text-align: center;
+  padding: 0;
+  margin: auto;
+  margin-bottom: 2%;
+  width: 100%;
   display: none;
+}
+
+hr {
+  display: none;
+  width: 100%;
+}
+
+#ipInfoContainer {
+  display: none;
+  width: 100%;
+  margin: auto;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1% auto;
+  background-color: #e46454;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  align-items: center;
+}
+
+p {
+  width: 45%;
+  padding: 0 5%;
+}
+
+.right-info {
+  text-align: right;
 }
