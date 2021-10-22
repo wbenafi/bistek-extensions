@@ -1,0 +1,39 @@
+body{
+  padding-bottom: 15px;
+  min-width: 340px; 
+  text-align: center; 
+}
+
+.custom-file-upload {
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #c6ffc7; /* Green */
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 4px 2px;
+  color: rgb(73, 73, 73);
+  font-weight: bold;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.title{
+  color: rgb(90, 90, 90);
+}
+
+.help-button{
+	position:fixed;
+	width:21px;
+	height:21px;
+	top: 49%;
+	right: 2%;
+	background-color:rgb(95, 102, 172);
+	color:#FFF;
+	border-radius:10px;
+	text-align:center;
+	box-shadow: 1px 1px 1.5px #999;
+  margin-top: px;
+}
