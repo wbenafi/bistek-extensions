@@ -2,6 +2,19 @@ body{
   padding-bottom: 15px;
   min-width: 340px; 
   text-align: center; 
+}.succes-animate {
+-webkit-animation: scc-anim-kf 1s;
+animation: scc-anim-kf 1s;
+}.falied-animate{
+  -webkit-animation: fail-anim-kf 1s;
+  animation: fail-anim-kf 1s;
+}
+
+@keyframes scc-anim-kf {
+  40% {background: rgb(94, 194, 94);}
+}
+@keyframes fail-anim-kf {
+  40% {background: rgb(197, 82, 82);}
 }
 
 .custom-file-upload {
@@ -36,4 +49,7 @@ input[type="file"] {
 	text-align:center;
 	box-shadow: 1px 1px 1.5px #999;
   margin-top: px;
+}
+
+.confirmation{
 }

@@ -21,14 +21,32 @@ function showHelp() {
 
 function showTitle() {
     customFileUpload.style.visibility = "visible";
-    title.innerText = `Click on "Choose File" to upload a .txt file with urls to be blocked:`
+    title.innerText = `Click on "Choose File" to upload a .txt file with domains to be blocked:`
 }
-function readFile() {
-    const urls = inputFile.files[0]
-    let reader = new FileReader()
-    reader.onload = function () {
-        urls_list = this.result.split(/\r?\n/)
-        chrome.storage.local.set({ urls: urls_list })
+
+function readFile(){
+    const file = inputFile.files[0]
+    let fileName = file.name.split('.');
+    if(fileName[fileName.length -1]=="txt"){
+        console.log(file);
+        let reader = new FileReader()
+        reader.onload = function () {
+            urls_list = this.result.split(/\r?\n/)
+            chrome.storage.local.set({ urls: urls_list })
+        }
+        reader.readAsText(file)
+        uploadAnimation('succes-animate')
+    }else{
+        uploadAnimation('falied-animate')
     }
-    reader.readAsText(urls)
+}
+
+async function uploadAnimation(animation){
+    document.body.classList.add(animation);
+    await sleep(1000)
+    document.body.classList.remove(animation);
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
