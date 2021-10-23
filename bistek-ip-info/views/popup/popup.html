@@ -6,12 +6,15 @@
   </head>
   <body>
     <script src="popup.js"></script>
-    <div class="container">
-      <h1>Show IP information</h1>
-      <input type="text" id="ip-address" />
-      <p id="error-msg">Invalid IP address</p>
-      <button id="add-btn">Show info</button>
-      <hr id="divider"/>
+    <div id="container" class="container">
+      <div class="search-header">
+        <h1>Show IP information</h1>
+        <input type="text" id="ip-address" placeholder="Type an IP address or a domain..." />
+        <p id="error-msg">Invalid IP address</p>
+        <button id="add-btn">Show info</button>
+        <hr id="divider"/>
+      </div>
+      
       <div id="ipInfoContainer"></div>
     </div>
   </body>
