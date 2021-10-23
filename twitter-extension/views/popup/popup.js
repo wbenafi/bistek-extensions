@@ -12,15 +12,19 @@ const makeRequest = (message) => {
   return body;
 };
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+async function uploadAnimation(animation){
+  document.body.classList.add(animation)
+  await sleep(1000)
+  document.body.classList.remove(animation)
+}
+
 function createTweet() {
   const tweetContent = document.getElementById("tweetContent")
   const message = tweetContent.value;
-  
-  const container = document.getElementById("container");
-  container.style.minHeight = "200px";
-
-  const infoMessage = document.getElementById("infoMessage");
-  infoMessage.innerText = '';
   
   var noEmptyStringRegex = /^(?!\s*$).+/;
   var match = noEmptyStringRegex.test(message);
@@ -30,24 +34,16 @@ function createTweet() {
       console.log(res)
       if(res.ok){
         uploadAnimation('succes-animate')
-        infoMessage.innerText = 'The Tweet was created successfully';
-        infoMessage.style.display = 'block';
-        tweetContent.innerText = '';
+        tweetContent.value = '';
       }else{
         uploadAnimation('falied-animate')
-        infoMessage.innerText = 'An error occurred while trying to create the Tweet';
-        infoMessage.style.display = 'block';
       }
     }).catch((err) => {
       uploadAnimation('falied-animate')
-      infoMessage.innerText = 'An error occurred while trying to create the Tweet';
-      infoMessage.style.display = 'block';
       console.log("ERROR: ", err)
     })
   }else{
     uploadAnimation('falied-animate')
-    infoMessage.innerText = 'Enter a valid message';
-    infoMessage.style.display = 'block';
   }
 }
 
