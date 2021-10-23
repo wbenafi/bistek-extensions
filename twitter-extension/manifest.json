@@ -12,6 +12,9 @@
     "background": {
         "service_worker": "background.js"
     },
+    "host_permissions": [
+        "https://bistek-extensions.herokuapp.com/"
+    ],
     "action": {
         "default_popup": "views/popup/popup.html",
         "default_icon": {

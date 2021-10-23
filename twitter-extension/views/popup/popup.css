@@ -2,6 +2,26 @@ body {
   padding: 5px;
 }
 
+.succes-animate {
+  -webkit-animation: scc-anim-kf 1s;
+  animation: scc-anim-kf 1s;
+}
+.falied-animate {
+  -webkit-animation: fail-anim-kf 1s;
+  animation: fail-anim-kf 1s;
+}
+
+@keyframes scc-anim-kf {
+  40% {
+    background: rgb(94, 194, 94);
+  }
+}
+@keyframes fail-anim-kf {
+  40% {
+    background: rgb(197, 82, 82);
+  }
+}
+
 .container {
   min-width: 300px;
   min-height: 180px;
@@ -44,4 +64,9 @@ h1 {
 #sendTweetBtn:hover {
   cursor: pointer;
   background-color: #1e87c9;
+}
+
+#infoMessage {
+  display: none;
+  color: white;
 }
