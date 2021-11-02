@@ -1,0 +1,16 @@
+{
+    "name": "Google Calendar API",
+    "description": "Get Events from google calendar",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+      "113": "113.png"
+    },
+    "host_permissions": ["https://bistek-extensions.herokuapp.com/"],
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "113": "113.png"
+      }
+    }
+  }

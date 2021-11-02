@@ -1,0 +1,50 @@
+.myData {
+    background-color: lightblue;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-card {
+    background-color: white;
+    width: 150px;                 /* Set width of cards */
+    border: 1px solid #EF9A9A;    /* Set up Border */
+    border-radius: 15px;           /* Slightly Curve edges */
+    overflow: hidden;             /* Fixes the corners */
+    display: flex;                /* Children use Flexbox */
+    flex-direction: column;       /* Rotate Axis */
+    margin: 10px;
+    padding: 10px;
+    transition: background 0.5s;
+    color: black;
+    text-decoration: none;
+}
+
+.movie-card img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 10px auto;
+}
+
+.movie-card:hover{
+    background-color: rgb(231, 231, 231);
+}
+
+.iconDetails {
+    margin-left:2%;
+    float:left; 
+    height:40px;
+    width:40px;	
+} 
+   
+.container2 {
+    width:100%;
+    border:1px;
+    height:auto;
+    padding:1%;
+}
+   
+h4 {
+    margin:15px 0px 0px 70px;
+}
