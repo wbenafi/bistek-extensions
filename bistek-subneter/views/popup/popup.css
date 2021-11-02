@@ -1,0 +1,60 @@
+body {
+    padding: 15px;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.popup-title {
+    font-size: 20px;
+    margin: 5px 0px 15px 0px;
+    color: #e46454
+}
+
+.input {
+    padding: 10px;
+    border: gray 1px solid;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 10px 0;
+    width: calc(100% - 22px);
+}
+
+.input#subnet {
+    width: 100%;
+}
+
+.input:focus {
+    outline-color: rgb(119, 116, 116);
+}
+
+.calculate-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #e46454;
+    color: white;
+    font-size: 15px;
+    border-radius: 6px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+.calculate-button:hover {
+    background-color: #ca4735;
+}
+
+.results-container>div {
+    color: #e46454;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.results-container span {
+    font-weight: 700;
+    color: gray;
+}
+
+.results-container.hidden {
+    display: none;
+}
