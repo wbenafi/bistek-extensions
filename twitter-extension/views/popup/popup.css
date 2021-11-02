@@ -1,0 +1,72 @@
+body {
+  padding: 5px;
+}
+
+.succes-animate {
+  -webkit-animation: scc-anim-kf 1s;
+  animation: scc-anim-kf 1s;
+}
+.falied-animate {
+  -webkit-animation: fail-anim-kf 1s;
+  animation: fail-anim-kf 1s;
+}
+
+@keyframes scc-anim-kf {
+  40% {
+    background: rgb(94, 194, 94);
+  }
+}
+@keyframes fail-anim-kf {
+  40% {
+    background: rgb(197, 82, 82);
+  }
+}
+
+.container {
+  min-width: 300px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 5px 0px;
+  color: rgb(90, 90, 90);
+}
+
+#tweetContent {
+  width: 95%;
+  min-height: 80px;
+  border-radius: 5px;
+  margin: auto;
+  resize: none;
+  border: gray 1px solid;
+}
+
+#tweetContent:focus-visible {
+  outline: none;
+}
+
+#sendTweetBtn {
+  width: 80%;
+  font-size: medium;
+  padding: 7.5px 0;
+  margin: auto;
+  background-color: #1da1f2;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  transition: background 0.5s;
+}
+
+#sendTweetBtn:hover {
+  cursor: pointer;
+  background-color: #1e87c9;
+}
+
+#infoMessage {
+  display: none;
+  color: white;
+}

@@ -1,0 +1,100 @@
+body {
+  padding: 5px;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 5px 0;
+  color: rgb(90, 90, 90);
+}
+
+.container {
+  min-width: 250px;
+  min-height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.search-header {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  padding: 5%;
+}
+
+input {
+  width: 90%;
+  padding: 2.5%;
+  margin: 5% auto;
+  border-radius: 5px;
+  border: gray 1px solid;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+button {
+  color: white;
+  font-size: medium;
+  width: 80%;
+  padding: 2.5% 5%;
+  background-color: #e46454;;
+  border-radius: 5px;
+  border: 0;
+  transition: 0.5s;
+  margin: auto;
+}
+
+button:hover {
+  background-color: #c25446;
+  cursor: pointer;
+}
+
+#error-msg {
+  text-align: center;
+  padding: 0;
+  margin: auto;
+  margin-bottom: 2%;
+  width: 100%;
+  display: none;
+}
+
+hr {
+  display: none;
+  width: 100%;
+}
+
+#ipInfoContainer {
+  display: none;
+  width: 100%;
+  margin: auto;
+  margin-top: 25vh;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1% auto;
+  background-color: #e46454;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  align-items: center;
+}
+
+p {
+  width: 45%;
+  padding: 0 5%;
+}
+
+.right-info {
+  text-align: right;
+}
