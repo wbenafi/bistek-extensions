@@ -1,0 +1,56 @@
+body {
+  padding: 15px
+}
+
+.popup-title {
+  font-size: 20px;
+  margin: 5px 0px;
+  color: rgb(90, 90, 90);
+}
+
+.port-input {
+  padding: 10px;
+  border: gray 1px solid;
+  border-radius: 5px;
+  font-size: 15px;
+  max-width: 150px;
+  margin: 10px 0;
+}
+
+.port-input:focus {
+  outline-color: rgb(119, 116, 116);
+}
+
+#port_description_container {
+  display: none;
+}
+
+.port-description-container h1 {
+  color: #e46454;
+  font-size: 20px;
+  margin-top: 12px;
+  border: none;
+  text-decoration: none;
+}
+
+.port-description-container .protocol {
+  color: rgb(95, 95, 95);
+  font-size: 15px;
+  font-weight: 700;
+  margin: 5px 0px;
+}
+
+.port-description-container .description {
+  font-size: 12px;
+  margin-bottom: 0;
+  color: gray;
+  line-height: 1.5;
+}
+
+.no-port {
+  font-size: 12px;
+  margin-bottom: 0;
+  color: gray;
+  line-height: 1.5;
+}
+

@@ -1,0 +1,36 @@
+{
+    "name": "Bistek Ports",
+    "description": "See ports information",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+        "16": "images/favicon-16x16.png",
+        "32": "images/favicon-32x32.png",
+        "192": "images/android-chrome-192x192.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*"
+            ],
+            "js": [
+                "views/port-on-page/setup.js"
+            ],
+            "css": [
+                "views/port-on-page/port-on-page.css"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+    "action": {
+        "default_popup": "views/popup/popup.html"
+    }
+}
